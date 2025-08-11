@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Darshan — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">Darshan H D</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero container">
+      <div class="hero-text">
+        <h1>Hi, I'm Darshan</h1>
+        <p>Electronics & Instrumentation Engineer • Embedded Systems • IoT • AI projects</p>
+        <div class="hero-cta">
+          <a href="#portfolio" class="btn">See Projects</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- replace with your image -->
+        <div class="placeholder">Your Image</div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about container card">
+      <h2>About</h2>
+      <p>
+        Motivated Electronics and Instrumentation graduate with hands-on experience in embedded systems,
+        IoT, and automation. Experienced with drone-based surveillance, foldable EV scooter design, and
+        AI-powered solutions. Strong team collaborator and event lead at ME-RIISE Foundation.
+      </p>
+      <div class="skills">
+        <strong>Skills:</strong>
+        <span>Embedded Systems</span>
+        <span>Python</span>
+        <span>C/C++</span>
+        <span>Arduino</span>
+        <span>YOLO & Deep Learning</span>
+        <span>React / HTML / CSS</span>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio container">
+      <h2>Portfolio</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Drone-based Dog Detection</h3>
+          <p>YOLOv7 + Raspberry Pi 4 for real-time detection and alerting to stakeholders.</p>
+        </article>
+        <article class="card">
+          <h3>Scootlite — Foldable EV Scooter</h3>
+          <p>Compact, lightweight dual-motor scooter with aluminum chassis and shock absorption.</p>
+        </article>
+        <article class="card">
+          <h3>AI Chatbot Landing Page Builder</h3>
+          <p>Chatbot that generates responsive landing pages from natural language prompts (no-code).</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="testimonials container card">
+      <h2>Testimonials</h2>
+      <div class="testimonial-list">
+        <blockquote>
+          <p>“Darshan organized outstanding events and contributed to incubator growth.”</p>
+          <cite>— MERIISE Foundation Mentor</cite>
+        </blockquote>
+        <blockquote>
+          <p>“Strong hands-on skills with embedded hardware and AI integration.”</p>
+          <cite>— Project Supervisor</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container card">
+      <h2>Contact</h2>
+      <p>Want to collaborate or hire me? Send a message below.</p>
+      <form id="contactForm" class="contact-form">
+        <label>
+          Name
+          <input type="text" id="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" id="email" required />
+        </label>
+        <label>
+          Message
+          <textarea id="message" rows="4" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send</button>
+        </div>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2025 Darshan H D — Electronics & Instrumentation</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
